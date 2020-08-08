@@ -6,7 +6,7 @@
 	">
 
     <bean id="simpleBean"
-          class="com.yicj.study.beanfactorypostprocessor.MySimpleBean">
+          class="com.yicj.study.foo.model.MySimpleBean">
         <property name="connectionString" value="bollocks" />
         <property name="username" value="Microsoft" />
         <property name="password" value="imaginecup" />

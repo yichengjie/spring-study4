@@ -1,4 +1,4 @@
-package com.yicj.study.beanfactorypostprocessor;
+package com.yicj.study.foo.model;
 
 import lombok.Data;
 
