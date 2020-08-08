@@ -13,7 +13,7 @@
      </bean>
 
     <bean id="bfpp"
-          class="com.yicj.study.beanfactorypostprocessor.ObscenityRemovingBeanFactoryProcessor">
+          class="com.yicj.study.beanfactorypostprocessor.client1.ObscenityRemovingBeanFactoryProcessor">
         <property name="obscenities">
             <set>
                 <value>bollocks</value>

@@ -1,7 +1,6 @@
-package com.yicj.study.beanfactorypostprocessor;
+package com.yicj.study.beanfactorypostprocessor.client1;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -20,7 +19,6 @@ import org.springframework.core.io.ClassPathResource;
 public class Main {
 
     public static void main(String[] args) {
-
         ClassPathResource resource = new ClassPathResource("beans.xml", Main.class);
         ConfigurableListableBeanFactory bf = new XmlBeanFactory(resource) ;
 
