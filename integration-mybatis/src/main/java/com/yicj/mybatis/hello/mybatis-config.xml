@@ -6,6 +6,7 @@
     <typeAliases>
         <typeAlias alias="User" type="com.yicj.mybatis.model.User" />
     </typeAliases>
+
     <mappers>
         <mapper resource="com/yicj/mybatis/hello/mapper/UserMapper.xml"/>
     </mappers>
