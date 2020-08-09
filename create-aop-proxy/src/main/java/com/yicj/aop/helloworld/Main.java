@@ -1,5 +1,10 @@
 package com.yicj.aop.helloworld;
 
+import com.yicj.aop.helloworld.service.HelloService;
+import com.yicj.aop.helloworld.service.TestBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * ClassName: Main
  * Description: TODO(描述)
@@ -10,4 +15,15 @@ package com.yicj.aop.helloworld;
  * @version 产品版本信息 yyyy-mm-dd 姓名(邮箱) 修改信息
  */
 public class Main {
+
+    public static void main(String[] args) {
+        ApplicationContext bf = new ClassPathXmlApplicationContext("beans.xml", Main.class) ;
+        TestBean bean = (TestBean)bf.getBean("testBean") ;
+        System.out.println("===> " + bean.getClass().getName());
+        bean.test();
+        ////////////////////
+        HelloService helloService = bf.getBean(HelloService.class);
+        System.out.println("===> " + helloService.getClass().getName());
+        helloService.hello();
+    }
 }

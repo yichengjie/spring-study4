@@ -1,8 +1,9 @@
-package com.yicj.aop.helloworld;
+package com.yicj.aop.helloworld.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.stereotype.Component;
 
 /**
  * ClassName: AspectJTest
@@ -15,6 +16,7 @@ import org.aspectj.lang.annotation.*;
  */
 @Slf4j
 @Aspect
+@Component
 public class AspectJTest {
 
     @Pointcut("execution(* com.yicj.aop..*.test(..))")

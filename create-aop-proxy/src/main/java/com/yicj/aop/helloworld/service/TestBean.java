@@ -1,7 +1,8 @@
-package com.yicj.aop.helloworld.busi;
+package com.yicj.aop.helloworld.service;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 /**
  * ClassName: TestBean
@@ -14,6 +15,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Data
 @Slf4j
+@Service
 public class TestBean {
 
     private String testStr = "testStr";

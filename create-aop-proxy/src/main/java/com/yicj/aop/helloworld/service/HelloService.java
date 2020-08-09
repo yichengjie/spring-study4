@@ -1,5 +1,8 @@
 package com.yicj.aop.helloworld.service;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
 /**
  * ClassName: HelloService
  * Description: TODO(描述)
@@ -9,5 +12,11 @@ package com.yicj.aop.helloworld.service;
  * 修改记录
  * @version 产品版本信息 yyyy-mm-dd 姓名(邮箱) 修改信息
  */
+@Slf4j
+@Service
 public class HelloService {
+
+    public void hello(){
+        System.out.println("hello world");
+    }
 }
