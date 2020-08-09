@@ -20,7 +20,7 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.version>3.2.10.RELEASE</spring.version>
+        <spring.version>4.3.5.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
@@ -109,17 +109,7 @@
                 <version>1.4</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis</artifactId>
-                <version>3.2.3</version>
-            </dependency>
 
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis-spring</artifactId>
-                <version>1.2.3</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
