@@ -1,8 +1,6 @@
-package com.yicj.mybatis.hello.mapper;
+package com.yicj.mybatis.mapper;
 
 import com.yicj.mybatis.model.User;
-
-import java.util.List;
 
 /**
  * ClassName: UserMapper

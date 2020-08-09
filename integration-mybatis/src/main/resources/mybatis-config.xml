@@ -8,6 +8,6 @@
     </typeAliases>
 
     <mappers>
-        <mapper resource="com/yicj/mybatis/hello/mapper/UserMapper.xml"/>
+        <mapper resource="mappers/UserMapper.xml"/>
     </mappers>
 </configuration>

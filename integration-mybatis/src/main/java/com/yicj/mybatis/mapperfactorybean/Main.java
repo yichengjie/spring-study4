@@ -1,6 +1,6 @@
-package com.yicj.mybatis.hello;
+package com.yicj.mybatis.mapperfactorybean;
 
-import com.yicj.mybatis.hello.mapper.UserMapper;
+import com.yicj.mybatis.mapper.UserMapper;
 import com.yicj.mybatis.model.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

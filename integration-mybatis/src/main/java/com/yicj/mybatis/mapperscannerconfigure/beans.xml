@@ -20,13 +20,12 @@
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="configLocation" value="classpath:com/yicj/mybatis/hello/mybatis-config.xml" />
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
         <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.yicj.mybatis.hello.mapper.UserMapper" />
-        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" >
+        <property name="basePackage" value="com.yicj.mybatis.mapper" />
     </bean>
 
 </beans>
