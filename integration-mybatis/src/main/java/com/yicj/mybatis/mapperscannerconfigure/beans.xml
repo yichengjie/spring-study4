@@ -26,6 +26,7 @@
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" >
         <property name="basePackage" value="com.yicj.mybatis.mapper" />
+        <property name="processPropertyPlaceHolders" value="true" />
     </bean>
 
 </beans>

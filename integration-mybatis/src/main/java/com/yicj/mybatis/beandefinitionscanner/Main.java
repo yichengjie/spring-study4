@@ -15,7 +15,7 @@ import org.springframework.context.support.GenericApplicationContext;
 public class Main {
 
     public static void main(String[] args) {
-        String BASE_PACKAGE = "com.yicj.mybatis.beandefinitionscanner";
+        String BASE_PACKAGE = "com.yicj.mybatis.beandefinitionscanner.service";
         GenericApplicationContext context = new GenericApplicationContext();
         MyClassPathDefinitionScanner scanner = new MyClassPathDefinitionScanner(context, MyBean.class);
         // 注册过滤器
