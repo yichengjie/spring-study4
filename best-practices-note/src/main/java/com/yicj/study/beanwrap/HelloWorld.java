@@ -21,7 +21,9 @@ import java.util.Date;
  */
 public class HelloWorld {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
+        FooModel fooModel = new FooModel() ;
+
         MutablePropertyValues pvs = new MutablePropertyValues();
         pvs.addPropertyValue(new PropertyValue("location", "classpath:hello.txt"));
         pvs.addPropertyValue(new PropertyValue("surname", "Blair"));
@@ -29,8 +31,6 @@ public class HelloWorld {
         pvs.addPropertyValue(new PropertyValue("date","2020-08-10")) ;
 
 
-
-        FooModel fooModel = new FooModel() ;
         BeanWrapper bw = PropertyAccessorFactory.forBeanPropertyAccess(fooModel);
         bw.registerCustomEditor(Resource.class, new ResourceEditor());
         bw.registerCustomEditor(Date.class, new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"),true));
