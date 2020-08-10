@@ -13,6 +13,7 @@
         <module>integration-mybatis</module>
         <module>spring-mvc</module>
         <module>custom-label-parse</module>
+        <module>best-practices-note</module>
     </modules>
     <packaging>pom</packaging>
 
