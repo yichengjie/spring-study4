@@ -11,6 +11,8 @@
         <module>container-extension</module>
         <module>create-aop-proxy</module>
         <module>integration-mybatis</module>
+        <module>spring-mvc</module>
+        <module>custom-label-parse</module>
     </modules>
     <packaging>pom</packaging>
 
