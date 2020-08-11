@@ -1,7 +1,7 @@
 package com.yicj.aop.helloworld;
 
-import com.yicj.aop.helloworld.service.HelloService;
-import com.yicj.aop.helloworld.service.TestBean;
+import com.yicj.aop.foo.service.HelloService;
+import com.yicj.aop.foo.service.TestBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,26 +1,22 @@
-package com.yicj.aop.helloworld.service;
+package com.yicj.aop.foo.service;
 
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 /**
- * ClassName: TestBean
+ * ClassName: HelloService
  * Description: TODO(描述)
- * Date: 2020/8/9 11:04
+ * Date: 2020/8/9 11:42
  *
  * @author yicj(626659321 @ qq.com)
  * 修改记录
  * @version 产品版本信息 yyyy-mm-dd 姓名(邮箱) 修改信息
  */
-@Data
 @Slf4j
 @Service
-public class TestBean {
+public class HelloService {
 
-    private String testStr = "testStr";
-
-    public void test(){
-        log.info("test execute ....");
+    public void hello(){
+        System.out.println("hello world");
     }
 }
