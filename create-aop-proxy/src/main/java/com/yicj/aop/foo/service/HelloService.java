@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 @Data
 public class HelloService {
     private String name ;
-    public void hello(){
+    public void hello(String add){
         log.info("hello world and name is : {}", name);
     }
 }

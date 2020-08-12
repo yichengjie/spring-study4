@@ -24,6 +24,6 @@ public class Main {
         ////////////////////
         HelloService helloService = bf.getBean(HelloService.class);
         System.out.println("===> " + helloService.getClass().getName());
-        helloService.hello();
+        helloService.hello("test");
     }
 }

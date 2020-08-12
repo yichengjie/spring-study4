@@ -30,6 +30,6 @@ public class Main {
         DefaultAopProxyFactory factory = new DefaultAopProxyFactory();
         AopProxy aopProxy = factory.createAopProxy(config);
         HelloService proxy = (HelloService)aopProxy.getProxy(Main.class.getClassLoader());
-        proxy.hello();
+        proxy.hello("world");
     }
 }
