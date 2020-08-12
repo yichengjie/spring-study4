@@ -14,6 +14,7 @@
         <module>spring-mvc</module>
         <module>custom-label-parse</module>
         <module>best-practices-note</module>
+        <module>load-bean</module>
     </modules>
     <packaging>pom</packaging>
 
