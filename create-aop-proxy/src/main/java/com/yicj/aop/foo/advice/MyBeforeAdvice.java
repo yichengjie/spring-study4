@@ -1,9 +1,7 @@
 package com.yicj.aop.foo.advice;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.aop.BeforeAdvice;
 import org.springframework.aop.MethodBeforeAdvice;
-
 import java.lang.reflect.Method;
 
 /**

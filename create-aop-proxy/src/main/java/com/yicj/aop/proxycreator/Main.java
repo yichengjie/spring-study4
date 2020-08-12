@@ -1,5 +1,6 @@
 package com.yicj.aop.proxycreator;
 
+import com.yicj.aop.foo.advice.MyAfterAdvice;
 import com.yicj.aop.foo.advice.MyBeforeAdvice;
 import com.yicj.aop.foo.service.HelloService;
 import org.springframework.aop.framework.AdvisedSupport;
@@ -23,6 +24,7 @@ public class Main {
 
         AdvisedSupport config = new AdvisedSupport();
         config.addAdvice(new MyBeforeAdvice());
+        config.addAdvice(new MyAfterAdvice());
         config.setTarget(helloService);
 
         DefaultAopProxyFactory factory = new DefaultAopProxyFactory();
