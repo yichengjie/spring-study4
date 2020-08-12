@@ -6,6 +6,7 @@ import com.yicj.aop.foo.service.HelloService;
 import org.springframework.aop.framework.AdvisedSupport;
 import org.springframework.aop.framework.AopProxy;
 import org.springframework.aop.framework.DefaultAopProxyFactory;
+import org.springframework.cglib.core.DebuggingClassWriter;
 
 /**
  * ClassName: Main
@@ -19,6 +20,9 @@ import org.springframework.aop.framework.DefaultAopProxyFactory;
 public class Main {
 
     public static void main(String[] args) {
+
+
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "D:\\code\\idea\\spring-study4\\create-aop-proxy\\classes");
         HelloService helloService = new HelloService();
         helloService.setName("yicj");
 
