@@ -1,18 +1,20 @@
 package com.yicj.study.ioc;
 
 import com.yicj.study.beanwrap.FooModel;
+import com.yicj.study.foo.service.UserService;
 import org.junit.Test;
-import org.springframework.beans.BeanWrapper;
-import org.springframework.beans.MutablePropertyValues;
-import org.springframework.beans.PropertyAccessorFactory;
-import org.springframework.beans.PropertyValue;
+import org.springframework.beans.*;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.config.DependencyDescriptor;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.core.MethodParameter;
 import org.springframework.core.Ordered;
+import org.springframework.core.PriorityOrdered;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceEditor;
 
+import java.beans.PropertyDescriptor;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -70,16 +72,6 @@ public class HelloWorldTest {
     }
 
 
-    /**
-     * 获取数组中元素的类型
-     */
-    @Test
-    public void testComponentType(){
 
-        FooModel [] fooModels = {new FooModel()} ;
 
-        Class<?> componentType = fooModels.getClass().getComponentType();
-
-        System.out.println(componentType.getName());
-    }
 }
