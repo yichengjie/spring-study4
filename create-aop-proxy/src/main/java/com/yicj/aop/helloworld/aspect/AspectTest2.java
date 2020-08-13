@@ -19,7 +19,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class AspectTest2 {
-    @Pointcut("execution(* com.yicj.aop..*.*(..))")
+    //@Pointcut("execution(* com.yicj.aop..*.*(..))")
+    @Pointcut("@annotation(com.yicj.aop.helloworld.anno.MyAnno)")
     public void test2(){}
 
     @Before("test2()")

@@ -1,5 +1,6 @@
 package com.yicj.aop.foo.service;
 
+import com.yicj.aop.helloworld.anno.MyAnno;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -16,8 +17,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @Data
+@MyAnno
 public class HelloService {
     private String name ;
+    @MyAnno
     public void hello(String add){
         log.info("hello world and name is : {}", name);
     }

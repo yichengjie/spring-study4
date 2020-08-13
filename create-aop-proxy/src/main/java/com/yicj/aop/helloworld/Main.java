@@ -19,11 +19,11 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext bf = new ClassPathXmlApplicationContext("beans.xml", Main.class) ;
         TestBean bean = (TestBean)bf.getBean("testBean") ;
-        System.out.println("===> " + bean.getClass().getName());
+        //System.out.println("===> " + bean.getClass().getName());
         bean.test();
         ////////////////////
         HelloService helloService = bf.getBean(HelloService.class);
-        System.out.println("===> " + helloService.getClass().getName());
+        //System.out.println("===> " + helloService.getClass().getName());
         helloService.hello("test");
     }
 }

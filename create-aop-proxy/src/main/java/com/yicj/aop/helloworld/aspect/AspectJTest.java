@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Aspect
-@Component
+//@Component
 public class AspectJTest {
 
     @Pointcut("execution(* com.yicj.aop..*.test(..))")
