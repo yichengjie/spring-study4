@@ -1,5 +1,7 @@
 package com.yicj.ioc.autowire;
 
+import java.util.List;
+
 /**
  * ClassName: UserService
  * Description: TODO(描述)
@@ -11,13 +13,13 @@ package com.yicj.ioc.autowire;
  */
 public class UserService {
 
-    private UserDao userDao ;
+    private List<UserDao> userDaoList ;
 
-    public UserDao getUserDao() {
-        return userDao;
+    public List<UserDao> getUserDaoList() {
+        return userDaoList;
     }
 
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
+    public void setUserDaoList(List<UserDao> userDaoList) {
+        this.userDaoList = userDaoList;
     }
 }

@@ -19,6 +19,6 @@ public class Main {
         ClassPathResource resource = new ClassPathResource("beans.xml", Main.class);
         BeanFactory beanFactory = new XmlBeanFactory(resource) ;
         UserService userService = (UserService)beanFactory.getBean("userService") ;
-        System.out.println(userService.getUserDao());
+        System.out.println(userService.getUserDaoList());
     }
 }

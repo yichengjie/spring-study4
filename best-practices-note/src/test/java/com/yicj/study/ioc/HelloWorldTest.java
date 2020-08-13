@@ -68,4 +68,18 @@ public class HelloWorldTest {
 
         System.out.println(fooModel);
     }
+
+
+    /**
+     * 获取数组中元素的类型
+     */
+    @Test
+    public void testComponentType(){
+
+        FooModel [] fooModels = {new FooModel()} ;
+
+        Class<?> componentType = fooModels.getClass().getComponentType();
+
+        System.out.println(componentType.getName());
+    }
 }
