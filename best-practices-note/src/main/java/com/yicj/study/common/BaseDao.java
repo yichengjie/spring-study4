@@ -4,7 +4,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 public class BaseDao<T> {
-    public Class clazz;
+    public Class<T> clazz;
 
     public BaseDao() {
         Type superclass = getClass().getGenericSuperclass();
